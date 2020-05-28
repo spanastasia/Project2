@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html { 
+    font-size: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+ html * {
+     margin: 0;
+     padding: 0;
+}
+h1, h2, h3 {
+     font-size: 10rem;
+}
+p {
+     font-size: 9rem;
+}
+dl {
+    font-size: 9rem;
+}
+header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    background-color:white;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+     
+}
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    border-top: none;
+    padding: 5px 2%;
+}
+footer{
+    border-bottom: none;
+    padding: 20px 2%;
+    height: 70px;
+}
+nav {
+    width: 65%;
+}
+ul {
+    list-style: none;
+}
+.heading {
+    align-self: flex-start;
+    width: 20%;
+    font-size: calc(8rem + 1vw);
+    min-width: 145px;
+}
+.heading a {
+    display: flex;
+    align-items: flex-end;
+    color: rgb(63, 60, 60);
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 0;
+}
+.logo {
+    max-width: 45px;
+}
+.nav {
+    width: 100%;
+    text-align: end;
+}
+.menu__box {
+    display: none;
+}
+#menu__toggle {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 22px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+}
+.menu__btn {
+    display: none; 
+    align-items: center;
+    position: fixed;
+    top: 22px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+.nav__item {
+    display: inline-block;
+    font-size: 8rem;
+}
+.nav__item a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 15px;
+}
+.nav__item a:hover {
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    overflow: hidden;
+}
+.page_main {
+    padding: 100px 10% 5px 10%;
+    min-height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 20rem;
+    font-size: calc(6rem + 1vh);
+}
+.page_main h2 {
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    width: 100vw;
+}
+section:nth-child(2n+1) {
+    background-color: black;
+    color: white;
+}
+section:nth-child(2n) {
+    background-color: white;
+    color: black;
+}
+.button {
+    text-decoration: none;
+    font-size: 8rem;
+    font-weight: bold;
+    height: 35px;
+    min-width: 115px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+.button-white {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+.button-black {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+.button:hover {
+    font-size: 8.2rem;
+    border: 1px solid;
+    transition: 0.2s;
+}
+
+dd {
+    padding-left: 4%;
+}
+.planets__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+    width: 100%;
+}
+.planets__card {
+    width: 20%;
+    min-width: 250px;
+    height: 35vh;
+    max-height: 200px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 3%;
+    padding: 55px 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.social_networks {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.social_networks__item a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 108%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#instagram {
+    background-image: url(https://image.flaticon.com/icons/svg/1409/1409946.svg);
+    background-position: left;
+    background-size: 103%;
+}
+#linkedin {
+    background-image: url(https://image.flaticon.com/icons/svg/124/124011.svg);
+}
+#facebook {
+    background-image: url(https://image.flaticon.com/icons/svg/2111/2111398.svg);
+    background-position: left;
+    background-size: 103%;
+}
+#github {
+    background-image: url(https://image.flaticon.com/icons/svg/38/38401.svg);
+    background-position: center;
+}
+
+
+
+@media (max-width: 991px) {
+    .heading a {
+        position: fixed;
+        left: 20px;
+    }
+    .menu__btn {
+        display: flex;
+    }
+    .nav {
+        visibility: hidden;
+        position: fixed;
+        right: 0;
+        top: 70px;
+        margin: 0;
+        text-align: center;
+        background-color: white;
+        border-bottom: 1px solid black;
+        padding: 15px 0;
+      }
+      .nav__item {
+        display: block;
+        font-size: 10rem;
+      }
+      .nav__item a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 10px 0;
+          margin: 0;
+      }
+      .nav__item a:active, .nav__item a:hover {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+      }
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .nav {
+        visibility: visible;
+        left: 0;
+      }
+      footer {
+          padding: 1%;
+      }
+      footer p {
+          width: 100%;
+          text-align: center;
+          font-size: 7rem;
+      }
+      .social_networks {
+          width: 90%;
+          max-width: 360px;
+          justify-content: space-between;
+          margin-top: 10px;
+      }
+}

@@ -1,0 +1,11 @@
+.bold {
+    font-weight: bolder;
+}
+.img_wrapper {
+    min-width: 180px;
+    width: 20%;
+}
+article {
+    width: 75%;
+    text-align: left;
+}

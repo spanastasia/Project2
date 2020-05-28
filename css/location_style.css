@@ -1,0 +1,48 @@
+.address {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+}
+#email {
+    color: black;
+    text-decoration: none;
+}
+#email:hover {
+    text-decoration: underline;
+}
+.address-info {
+    margin: 15px;
+    width: 47%;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+.address-info iframe {
+    width: 100%;
+    min-height: 300px;
+}
+.address-contacts {
+    margin: 10px 0;
+}
+.address-form {
+    margin: 15px;
+    width: 47%;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+}
+.address-name, .address-email, .address-message {
+    width: 100%;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.address-message {
+
+}
