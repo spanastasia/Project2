@@ -29,12 +29,12 @@ client.getUserCoursesAndModules(function(error, data) {
     if (modulesWrapper) {
         for (let i = 0; i < data.modules.length; i++) {
             if (i == 3) break;
-            content = '<div class=\"planets__card\"\><div class=\"planets__img\"\><img src=\"/img/planet' + (i + 1) + '.png\" alt=\"planet image\"\></div\><h3>' +  data.modules[i].title + '</h3\></div\>'
+            content = '<div class=\"planets__card\"\><div class=\"planets__img\"\><img src=\"./img/planet' + (i + 1) + '.png\" alt=\"planet image\"\></div\><h3>' +  data.modules[i].title + '</h3\></div\>'
         }
         modulesWrapper.innerHTML = content;
     } else if (modulesMain) {
         for (let i = 0; i < data.modules.length; i++) { 
-            content += '<div class=\"planets__card\"\><div class=\"planets__img\"\><img src=\"/img/planet' + (i < 9 ? (i + 1) : (i % 9 + 1)) + '.png\" alt=\"planet image\"\></div\><h3>' +  data.modules[i].title + '</h3\></div\>' 
+            content += '<div class=\"planets__card\"\><div class=\"planets__img\"\><img src=\"./img/planet' + (i < 9 ? (i + 1) : (i % 9 + 1)) + '.png\" alt=\"planet image\"\></div\><h3>' +  data.modules[i].title + '</h3\></div\>' 
         }
         modulesMain.innerHTML = content;
     }
