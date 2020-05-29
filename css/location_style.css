@@ -23,6 +23,7 @@
 .address-info iframe {
     width: 100%;
     min-height: 300px;
+    filter: invert(90%);
 }
 .address-contacts {
     margin: 10px 0;
